@@ -18,6 +18,21 @@ For the sake of sanity all code in this repository will follow a few common but 
  - Strategy Method - This should be the lingua coda for all code it can apply
  - snake_case - simple, clean, easy
 
+## Acceptable Languages
+These starters are for those of us who want to try and get practical and often mondane work done simply and reliably and for that reason we need a language that is safe, performant, well documented and integrates with existing systems. For those reasons there are really only two languages currently that I feel good using. Language features will not be abused in service to overly opaque abstractions, this code should be roughly translatable to other languages with an understandable amount of effort.
+- Rust
+- Go
+
 ## How code is written 
-The codebase for sourdough should be <b>READABLE AND RELIABLE</b> 
-readable means that code is organized to be browsed in its directories and organized to be searched within its files. Common features should live in the file when possible and reuse should not come at the expense of contrived abstractions. There is nothing wrong with a little reuse, the compiler won't mind I assure you. 
+The codebase for sourdough should be <b>READABLE AND RELIABLE</b>  
+
+### readable means
+ - Code is organized to be browsed in its directories and organized to be searched within its files
+ - Reuse should not come at the expense of contrived abstractions. There is nothing wrong with a little reuse
+ - Functionality should live within the same files that use them whenever possible
+
+### reliable means
+ - Code is designed to do a small number of things correctly
+ - Components of code can be taken and used in other codebases without friction
+ - Code should be simple, clean, uniform, documented, and tested
+ - Code will only use those libraries it absolutely needs
